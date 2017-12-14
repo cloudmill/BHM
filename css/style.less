@@ -1438,6 +1438,37 @@
 		.blog_list {
 			padding: 40px 0px;
 			background: @ll_grey;
+			&.sales {
+				.block {
+					.item {
+						.info {
+							height: 270px;
+							padding-top: 30px;
+							.date {
+								left: auto;
+								top: auto;
+								right: 30px;
+								bottom: 30px;
+								padding-left: 35px;
+								max-width: 150px;
+								font: 13px/20px @font;
+								color: @black;
+								padding-bottom: 5px;
+								&:before {
+									content: '';
+									display: block;
+									width: 22px;
+									height: 22px;
+									background: url(../img/icon_sale.png) no-repeat 50% 50%;
+									position: absolute;
+									left: 0px;
+									top: 3px;
+								}
+							}
+						}
+					}
+				}
+			}
 			.bg_outside;
 			.urls {
 				margin-bottom: 40px;
