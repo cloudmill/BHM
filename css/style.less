@@ -470,7 +470,7 @@
 		.main_items {
 			.title {
 				font: 30px/36px @font;
-				margin-bottom: 30px;
+				margin-bottom: 40px;
 			}
 			.block {
 				&.slick-slider {
@@ -1668,6 +1668,28 @@
 			float: left;
 			width: 820px;
 			margin-bottom: 80px;
+			&.sales {
+				.date {
+					float: left;
+					overflow: visible;
+					padding-left: 35px;
+					font: 13px/30px @font;
+					color: @black;
+					margin-bottom: 20px;
+					position: relative;
+					text-align: left;
+					&:before {
+						content: '';
+						display: block;
+						width: 22px;
+						height: 22px;
+						background: url(../img/icon_sale.png) no-repeat 50% 50%;
+						position: absolute;
+						left: 0px;
+						top: 3px;
+					}
+				}
+			}
 			.type {
 				float: left;
 				font: 13px/30px @font;
