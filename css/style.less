@@ -393,6 +393,13 @@
 			margin: 0px;
 			margin-bottom: 40px;
 		}
+		a {
+			color: @pink;
+			text-decoration: none;
+			&:hover {
+				color: @black;
+			}
+		}
 		.main_blocks {
 			margin-bottom: 100px;
 			.urls {
@@ -624,6 +631,7 @@
 		}
 		.main_reviews {
 			&.opt {
+				margin-bottom: 100px;
 				.title {
 					text-align: left;
 					padding-left: 150px;
@@ -1335,6 +1343,252 @@
 								}
 							}
 						}
+					}
+				}
+			}
+		}
+		.opt_forms {
+			width: 640px;
+			margin: 0px auto;
+			padding: 60px 0px;
+			background: @ll_grey;
+			margin-bottom: -100px;
+			.bg_outside;
+			.title {
+				font: 20px/26px @font;
+				margin-bottom: 50px;
+				span {
+					font: 300 40px/50px @proxima;
+					margin-bottom: 20px;
+					display: block;
+				}
+			}
+			.block {
+				margin: 0px -20px;
+				margin-bottom: 40px;
+				.item {
+					float: left;
+					width: 50%;
+					padding: 0px 20px;
+					margin-top: 40px;
+					&:nth-child(-n+2) {
+						margin-top: 0px;
+					}
+					span {
+						display: block;
+						margin-bottom: 10px;
+						font: 16px/20px @font;
+					}
+					input[type=text] {
+						width: 100%;
+						height: 60px;
+						padding: 18px 20px;
+						border: 2px solid #fff;
+						font: 16px/20px @font;
+						&:focus {
+							outline: none;
+							border: 2px solid @pink;
+						}
+					}
+				}
+			}
+			.send {
+				span {
+					display: block;
+					float: left;
+					width: 50%;
+					padding-left: 50px;
+					padding-right: 10px;
+					padding-top: 10px;
+					font: 14px/18px @font;
+					position: relative;
+					cursor: pointer;
+					&.active {
+						&:before {
+							background: url(../img/icon_check.png) no-repeat 50% 50% #fff;
+						}
+					}
+					&:before {
+						content: '';
+						display: block;
+						width: 30px;
+						height: 30px;
+						background: #fff;
+						border: 1px solid @l_grey;
+						position: absolute;
+						left: 0px;
+						top: 0px;
+					}
+				}
+				input[type=button] {
+					display: block;
+					float: right;
+					width: 300px;
+					height: 60px;
+					border: none;
+					color: #fff;
+					font: 12px/60px @font;
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					cursor: pointer;
+					.bg_grdnt;
+				}
+			}
+		}
+		.blog_list {
+			padding: 40px 0px;
+			background: @ll_grey;
+			.bg_outside;
+			.urls {
+				margin-bottom: 40px;
+				a {
+					display: block;
+					float: left;
+					padding: 0px 25px;
+					height: 40px;
+					font: 16px/40px @font;
+					color: @l_grey;
+					text-decoration: none;
+					margin-left: 10px;
+					background: #fff;
+					letter-spacing: 1px;
+					&:nth-child(1) {
+						margin-left: 0px;
+					}
+					&:hover {
+						.bg_grdnt;
+						color: #fff;
+					}
+					&.active {
+						background: @black;
+						color: #fff;
+					}
+				}
+			}
+			.block {
+				margin: 0px -10px;
+				.item {
+					width: 33%;
+					padding: 0px 10px;
+					float: left;
+					margin-top: 20px;
+					&:nth-child(-n+2) {
+						margin-top: 0px;
+					}
+					&:nth-child(7n+6) {
+						width: 34%;
+					}
+					&:nth-child(7n+4) {
+						width: 67%;
+						.info {
+							.name {
+								float: left;
+								width: 50%;
+								padding-right: 10px;
+							}
+							.txt {
+								float: left;
+								width: 50%;
+								padding-left: 10px;
+							}
+						}
+					}
+					&:nth-child(7n+1) {
+						width: 67%;
+						.info {
+							.name {
+								float: left;
+								width: 50%;
+								padding-right: 10px;
+							}
+							.txt {
+								float: left;
+								width: 50%;
+								padding-left: 10px;
+							}
+						}
+					}
+					.img {
+						height: 255px;
+						a {
+							display: block;
+							height: 100%;
+							background: @l_grey;
+						}
+					}
+					.info {
+						height: 340px;
+						background: #fff;
+						padding: 30px;
+						padding-top: 90px;
+						position: relative;
+						.type {
+							position: absolute;
+							left: 30px;
+							top: 30px;
+							font: 13px/30px @font;
+							color: @l_grey;
+							background: @ll_grey;
+							padding: 0px 10px;
+						}
+						.date {
+							position: absolute;
+							right: 30px;
+							top: 30px;
+							font: 13px/30px @font;
+							color: @l_grey;
+						}
+						.name {
+							font: 18px/26px @font;
+							margin-bottom: 20px;
+						}
+						.txt {
+							font: 14px/22px @font;
+						}
+						.url {
+							position: absolute;
+							left: 30px;
+							bottom: 30px;
+							a {
+								display: block;
+								width: 160px;
+								height: 46px;
+								border: 2px solid @pink;
+								text-align: center;
+								font: 500 12px/42px @font;
+								letter-spacing: 1px;
+								color: @black;
+								text-transform: uppercase;
+								float: left;
+								margin-right: 20px;
+								text-decoration: none;
+								&:hover {
+									.bg_grdnt;
+									color: #fff;
+									padding: 2px;
+									border: none;
+								}
+							}
+						}
+					}
+				}
+			}
+			.load {
+				margin-top: 50px;
+				a {
+					display: block;
+					margin: 0px auto;
+					width: 160px;
+					height: 46px;
+					border: 2px solid @l_grey;
+					text-align: center;
+					font: 500 12px/42px @font;
+					letter-spacing: 1px;
+					color: @black;
+					text-transform: uppercase;
+					text-decoration: none;
+					&:hover {
+						background: @l_grey;
 					}
 				}
 			}
